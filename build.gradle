@@ -15,7 +15,7 @@ plugins {
 }
 
 // Define the main class for the application
-mainClassName = 'com.coldraincn.parsing.lexer.Test'
+mainClassName = 'com.coldraincn.parsing.recursiveDescent.Test'
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.

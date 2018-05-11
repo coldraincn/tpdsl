@@ -35,9 +35,13 @@ public class ListLexer extends Lexer{
         StringBuilder buf=new StringBuilder();
         do{
             buf.append(c);
-            consume();
+            LETTER();
         }while(isLETTER());
         return new Token(NAME,buf.toString());
+    }
+    void LETTER() {
+        if ( isLETTER() ) consume();
+        else throw new Error("expecting LETTER; found "+c);
     }
     void WS(){
         while(c==' '||c=='\t'||c=='\n'||c=='\r'){
