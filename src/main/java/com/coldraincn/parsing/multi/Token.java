@@ -1,3 +1,4 @@
+package com.coldraincn.parsing.multi;
 /***
  * Excerpted from "Language Implementation Patterns",
  * published by The Pragmatic Bookshelf.
